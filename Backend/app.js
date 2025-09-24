@@ -36,7 +36,7 @@ dbConnectionServer();
 app.post('/users', async (request, response) => {
   const { first_name, last_name, email, department } = request.body;
   if (!first_name || !last_name || !email || !department) {
-    return response.status(400).send('All Fields are requierd');
+    return response.status(400).json({ error: 'All fields are required' });
   }
   try {
     const emailExistQuery = `SELECT * FROM Users where email=?;`;
@@ -52,7 +52,7 @@ app.post('/users', async (request, response) => {
       email,
       department,
     ]);
-    return response.status(200).send('New User Inserted');
+    return response.status(200).json({ id: dbResponse.lastID });
   } catch (err) {
     return response.status(400).json({ error: `${err.message}` });
   }

@@ -1,23 +1,23 @@
-POST http://localhost:3000/users/
+POST https://ajackus-usermanagementdashboard.onrender.com/users/
 Content-Type: application/json
 
 {
-  "first_name": "Bhavya",
-  "last_name": "Koppolu",
-  "email": "bhavyakoppolu123@gmail.com",
+  "first_name": "latha",
+  "last_name": "maram",
+  "email": "lathmaram123@gmail.com",
   "department": "Home Maker"
 }
 
 ###
-GET http://localhost:3000/users/
+GET https://ajackus-usermanagementdashboard.onrender.com/users/
 
 ###
 
-GET http://localhost:3000/users/3
+GET https://ajackus-usermanagementdashboard.onrender.com/users/3
 
 ###
 
-PUT http://localhost:3000/users/3
+PUT https://ajackus-usermanagementdashboard.onrender.com/users/3
 Content-Type: application/json
 
 {
@@ -28,4 +28,4 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3000/users/3
+DELETE https://ajackus-usermanagementdashboard.onrender.com/users/3
