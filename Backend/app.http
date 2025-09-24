@@ -1,0 +1,31 @@
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{
+  "first_name": "Bhavya",
+  "last_name": "Koppolu",
+  "email": "bhavyakoppolu123@gmail.com",
+  "department": "Home Maker"
+}
+
+###
+GET http://localhost:3000/users/
+
+###
+
+GET http://localhost:3000/users/3
+
+###
+
+PUT http://localhost:3000/users/3
+Content-Type: application/json
+
+{
+  "first_name": "Anitha Srivali",
+  "last_name": "Kumar",
+  "department": "HR"
+}
+
+###
+
+DELETE http://localhost:3000/users/3
