@@ -1,0 +1,21 @@
+.formInputs{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.addBtn,
+.cancelBtn{
+  background-color: rgba(24, 24, 24, 0.564);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.addBtn:hover,
+.cancelBtn:hover{
+  background-color: black;
+  cursor: pointer;
+}
+.newUserAddform{
+  padding: 10px;
+}
